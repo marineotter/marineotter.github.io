@@ -1,4 +1,4 @@
 #!/bin/sh -l
 
 cd landingpage
-npm install && npm run build
+npm install && npm run start
