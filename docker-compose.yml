@@ -1,8 +1,9 @@
 version: '3'
 services:
   devcontainer:
-    image: node:16.0.0-buster-slim
+    build: 
+      context: .
     volumes:
       - .:/workspace
-    command: sh -c "sleep infinity"
+    command: /bin/bash -c "cd /workspace && /bin/bash build.sh"
     

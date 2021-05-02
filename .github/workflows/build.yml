@@ -18,15 +18,13 @@ jobs:
           node-version: 16.x
 
       - name: Build pages
-        run: |
-          npm ci
-          npm run build
-        env:
-          CI: true
+        shell: bash
+        run: docker-compose up
 
       - name: Publish
         uses: peaceiris/actions-gh-pages@v3
-        env:
-          ACTIONS_DEPLOY_KEY: ${{ secrets.GITHUB_TOKEN }}
-          PUBLISH_BRANCH: gh-pages
-          PUBLISH_DIR: ./src/build
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: ./landingpage/build
+          cname: www.kawauso-lab.org
