@@ -1,0 +1,32 @@
+name: Publish GitHub Page
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: Init build env
+        uses: actions/setup-node@v1
+        with:
+          node-version: 16.x
+
+      - name: Build pages
+        run: |
+          npm ci
+          npm run build
+        env:
+          CI: true
+
+      - name: Publish
+        uses: peaceiris/actions-gh-pages@v3
+        env:
+          ACTIONS_DEPLOY_KEY: ${{ secrets.GITHUB_TOKEN }}
+          PUBLISH_BRANCH: gh-pages
+          PUBLISH_DIR: ./src/build
