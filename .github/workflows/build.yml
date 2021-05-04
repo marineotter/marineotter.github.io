@@ -6,17 +6,31 @@ on:
       - master
 
 jobs:
- build:
+  build:
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v1
+      - name: Checkout
+        uses: actions/checkout@v1
 
       - name: Build pages
         shell: bash
         run: docker-compose up
 
-      - name: Publish
+      - name: Save artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: publish-data
+          path: ./landingpage/build
+
+  publish:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Load artifacts
+        uses: actions/download-artifact@v2
+        with:
+          name: publish-data
+      - name: Publish to gh pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
