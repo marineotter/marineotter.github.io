@@ -1,9 +1,9 @@
 version: '3'
 services:
   devcontainer:
-    build: 
-      context: .
+    image: node:16.0.0-buster-slim
     volumes:
+      - ~/.npm:/root/.npm
       - .:/workspace
     command: /bin/bash -c "cd /workspace && /bin/bash build.sh"
     
