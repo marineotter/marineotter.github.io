@@ -1,4 +1,4 @@
-baseurl = "http://www.example.com"
+baseurl = "https://www.kawauso-lab.org"
 title = "川獺技研 - kawauso-lab"
 theme = "hugo-coder"
 languagecode = "ja"
