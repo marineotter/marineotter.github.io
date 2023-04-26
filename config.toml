@@ -27,7 +27,7 @@ style = "github-dark"
   enableTwemoji = true
 
   colorScheme = "dark"
-  hidecolorschemetoggle = false
+  hidecolorschemetoggle = true
 
   # customCSS = ["css/custom.css"]
   # customSCSS = ["scss/custom.scss"]
