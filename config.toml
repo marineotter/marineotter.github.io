@@ -29,7 +29,7 @@ style = "github-dark"
   colorScheme = "dark"
   hidecolorschemetoggle = true
 
-  # customCSS = ["css/custom.css"]
+  customCSS = ["css/custom.css"]
   # customSCSS = ["scss/custom.scss"]
   # customJS = ["js/custom.js"]
 
