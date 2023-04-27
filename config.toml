@@ -9,7 +9,7 @@ paginate = 20
 # disqusShortname = "yourdiscussshortname"
 
 [markup.highlight]
-style = "github-dark"
+  style = "github-dark"
 
 [params]
   author = "川獺技研 - kawauso-lab"
@@ -29,7 +29,7 @@ style = "github-dark"
   colorScheme = "dark"
   hidecolorschemetoggle = true
 
-  customCSS = ["css/custom.css"]
+  customCSS = ["css/notosansjp.css", "css/custom.css"]
   # customSCSS = ["scss/custom.scss"]
   # customJS = ["js/custom.js"]
 
