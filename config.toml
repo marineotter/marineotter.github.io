@@ -14,7 +14,7 @@ paginate = 20
 [params]
   author = "川獺技研 - kawauso-lab"
   # info = ""
-  # description = ""
+  description = "川獺技研のホームページです。"
   keywords = "blog,developer,personal"
   # avatarurl = ""
   # gravatar = ""

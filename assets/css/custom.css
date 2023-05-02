@@ -7,6 +7,7 @@
         local('NotoSansJP-Thin'),
         url('../fonts/NotoSansCJKjp-Thin.woff2') format('woff2'),
         url('../fonts/NotoSansCJKjp-Thin.woff') format('woff');
+    font-display: swap;
 }
 
 @font-face {
@@ -18,6 +19,7 @@
         local('NotoSansJP-Regular'),
         url('../fonts/NotoSansCJKjp-Regular.woff2') format('woff2'),
         url('../fonts/NotoSansCJKjp-Regular.woff') format('woff');
+    font-display: swap;
 }
 
 @font-face {
@@ -28,8 +30,30 @@
         local('NotoSansJP-Bold'),
         url('../fonts/NotoSansCJKjp-Bold.woff2') format('woff2'),
         url('../fonts/NotoSansCJKjp-Bold.woff') format('woff');
+    font-display: swap;
 }
 
-body {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.list ul li .title,
+.pagination,
+.navigation a,
+.navigation span {
     font-family: 'Noto Sans', 'Noto Sans CJK JP', 'Noto Sans CJK JP Subset', sans-serif;
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Noto Sans', 'Noto Sans CJK JP', 'Noto Sans CJK JP Subset', sans-serif;
+    font-weight: 700;
 }
