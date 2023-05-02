@@ -1,6 +1,17 @@
 @font-face {
     font-family: 'Noto Sans CJK JP Subset';
     font-style: normal;
+    font-weight: 100;
+    src: local('Noto Sans CJK JP'),
+        local('NotoSansCJKjp-Thin'),
+        local('NotoSansJP-Thin'),
+        url('../fonts/NotoSansCJKjp-Thin.woff2') format('woff2'),
+        url('../fonts/NotoSansCJKjp-Thin.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Noto Sans CJK JP Subset';
+    font-style: normal;
     font-weight: 400;
     src: local('Noto Sans CJK JP'),
         local('NotoSansCJKjp-Regular'),
