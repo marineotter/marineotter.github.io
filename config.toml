@@ -14,7 +14,7 @@ paginate = 20
 [params]
   author = "川獺技研 - kawauso-lab"
   # info = ""
-  # description = ""
+  description = "川獺技研のホームページです。"
   keywords = "blog,developer,personal"
   # avatarurl = ""
   # gravatar = ""
@@ -29,7 +29,7 @@ paginate = 20
   colorScheme = "dark"
   hidecolorschemetoggle = true
 
-  customCSS = ["css/notosansjp.css", "css/custom.css"]
+  customCSS = ["css/custom.css"]
   # customSCSS = ["scss/custom.scss"]
   # customJS = ["js/custom.js"]
 
