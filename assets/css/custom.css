@@ -57,3 +57,13 @@ h6 {
     font-family: 'Noto Sans', 'Noto Sans CJK JP', 'Noto Sans CJK JP Subset', sans-serif;
     font-weight: 700;
 }
+
+.navigation #dark-mode-toggle {
+    margin: initial;
+    font-size: initial;
+    line-height: initial;
+    bottom: initial;
+    left: initial;
+    z-index: initial;
+    position: initial;
+}
