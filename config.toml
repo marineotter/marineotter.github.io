@@ -16,11 +16,12 @@ paginate = 20
   # info = ""
   description = "川獺技研のホームページです。"
   keywords = "blog,developer,personal"
-  avatarurl = "images/avatar.png"
+  avatarurl = "/images/avatar.png"
   # gravatar = ""
 
-  # favicon_32 = "/img/favicon-32x32.png"
-  # favicon_16 = "/img/favicon-16x16.png"
+  favicon_64 = "/images/icon-64.png"
+  favicon_180 = "/images/icon-180.png"
+  touchicon = "/images/icon-180.png"
 
   since = 2023
 
