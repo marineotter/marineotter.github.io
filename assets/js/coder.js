@@ -17,6 +17,11 @@ if (darkModeToggle) {
         setTheme(theme);
         rememberTheme(theme);
     });
+    darkModeToggle.addEventListener('keypress', () => {
+        let theme = body.classList.contains("colorscheme-dark") ? "light" : "dark";
+        setTheme(theme);
+        rememberTheme(theme);
+    });
 }
 
 darkModeMediaQuery.addListener((event) => {
