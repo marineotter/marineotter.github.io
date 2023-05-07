@@ -82,8 +82,8 @@
       {{ end }}
     {{ end }}
 
+    <link rel="icon" type="image/png" href="{{ .Site.Params.favicon_180 | default "/images/favicon-180.png" | relURL }}"">
     <link rel="icon" type="image/png" href="{{ .Site.Params.favicon_64 | default "/images/favicon-64.png" | relURL }}" sizes="16x16 24x24 32x32 48x48 57x57 60x60 64x64">
-    <link rel="icon" type="image/png" href="{{ .Site.Params.favicon_180 | default "/images/favicon-180.png" | relURL }}" sizes="72x72 76x76 114x114 120x120 144x144 152x152 180x180">
 
     <link rel="apple-touch-icon" href="{{ .Site.Params.touchicon | default "/images/apple-touch-icon.png" | relURL }}">
     <link rel="apple-touch-icon" sizes="180x180" href="{{ .Site.Params.touchicon | default "/images/apple-touch-icon.png" | relURL }}">
