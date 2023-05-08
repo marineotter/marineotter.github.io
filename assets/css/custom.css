@@ -34,12 +34,6 @@
 }
 
 body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
 .list ul li .title,
 .pagination,
 .navigation a,
@@ -58,12 +52,6 @@ h6 {
     font-weight: 700;
 }
 
-.navigation #dark-mode-toggle {
-    margin: initial;
-    font-size: initial;
-    line-height: initial;
-    bottom: initial;
-    left: initial;
-    z-index: initial;
-    position: initial;
+.navigation #nav-dark-mode-toggle {
+    font-size: 2.1rem;
 }

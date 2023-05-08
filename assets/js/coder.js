@@ -1,5 +1,6 @@
 const body = document.body;
 const darkModeToggle = document.getElementById('dark-mode-toggle');
+const navDarkModeToggle = document.getElementById('nav-dark-mode-toggle');
 const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
 
 // Check if user preference is set, if not check value of body class for light or dark else it means that colorscheme = auto
@@ -17,7 +18,15 @@ if (darkModeToggle) {
         setTheme(theme);
         rememberTheme(theme);
     });
-    darkModeToggle.addEventListener('keypress', () => {
+}
+
+if (navDarkModeToggle) {
+    navDarkModeToggle.addEventListener('click', () => {
+        let theme = body.classList.contains("colorscheme-dark") ? "light" : "dark";
+        setTheme(theme);
+        rememberTheme(theme);
+    });
+    navDarkModeToggle.addEventListener('keypress', () => {
         let theme = body.classList.contains("colorscheme-dark") ? "light" : "dark";
         setTheme(theme);
         rememberTheme(theme);
