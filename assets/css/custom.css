@@ -60,8 +60,15 @@ h6 {
 
 /* support iOS */
 @supports (-webkit-touch-callout: none) {
+    html{
+        height: -webkit-fill-available;
+    }
     body {
       /* The hack for Safari */
         height: -webkit-fill-available;
+    }
+    .wrapper {
+        min-height: 100vh;
+        min-height: -webkit-fill-available;
     }
 }
