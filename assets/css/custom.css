@@ -1,36 +1,46 @@
+/* Font
+    "nsjp is a subset font based on Noto Sans. Noto Sans can be obtained from the following link."
+ */
+/*
+* "NotoSerifJP" licensed under the SIL Open Font License
+* https://www.google.com/get/noto/#serif-jpan
+*/
 @font-face {
-    font-family: 'Noto Sans CJK JP Subset';
+    font-family: nsjp;
     font-style: normal;
     font-weight: 100;
     src: local('Noto Sans CJK JP'),
         local('NotoSansCJKjp-Thin'),
         local('NotoSansJP-Thin'),
-        url('../fonts/NotoSansCJKjp-Thin.woff2') format('woff2'),
-        url('../fonts/NotoSansCJKjp-Thin.woff') format('woff');
+        url('../fonts/nsjpt.woff2') format('woff2'),
+        url('../fonts/nsjpt.woff') format('woff');
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Noto Sans CJK JP Subset';
+    font-family: nsjp;
     font-style: normal;
     font-weight: 400;
     src: local('Noto Sans CJK JP'),
         local('NotoSansCJKjp-Regular'),
         local('NotoSansJP-Regular'),
-        url('../fonts/NotoSansCJKjp-Regular.woff2') format('woff2'),
-        url('../fonts/NotoSansCJKjp-Regular.woff') format('woff');
+        url('../fonts/nsjpr.woff2') format('woff2'),
+        url('../fonts/nsjpr.woff') format('woff');
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Noto Sans CJK JP Subset';
+    font-family: nsjp;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 1000;
     src: local('NotoSansCJKjp-Bold'),
         local('NotoSansJP-Bold'),
-        url('../fonts/NotoSansCJKjp-Bold.woff2') format('woff2'),
-        url('../fonts/NotoSansCJKjp-Bold.woff') format('woff');
+        url('../fonts/nsjpb.woff2') format('woff2'),
+        url('../fonts/nsjpb.woff') format('woff');
     font-display: swap;
+}
+body {
+    font-family: nsjp, sans-serif;
 }
 
 body,
@@ -38,7 +48,7 @@ body,
 .pagination,
 .navigation a,
 .navigation span {
-    font-family: 'Noto Sans', 'Noto Sans CJK JP', 'Noto Sans CJK JP Subset', sans-serif;
+    font-family: nsjp, sans-serif;
     font-weight: 400;
 }
 
@@ -48,7 +58,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Noto Sans', 'Noto Sans CJK JP', 'Noto Sans CJK JP Subset', sans-serif;
+    font-family: nsjp, sans-serif;
     font-weight: 700;
 }
 
